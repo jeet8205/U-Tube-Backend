@@ -6,6 +6,7 @@ dotenv.config({
     path: './env'
 })
 
+// Connect to MongoDB
 connectDB()
 .then(()=> {
     app.listen(process.env.PORT || 8000, () => {
